@@ -4,14 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.sample</groupId>
     <artifactId>Microservice-Spring-Boot-Spring-Cloud</artifactId>
+    <name>Microservice-Spring-Boot-Spring-Cloud</name>
+    <groupId>com.sample</groupId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
-        <maven.compiler.source>12</maven.compiler.source>
-        <maven.compiler.target>12</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <modules>
+        <module>book-service</module>
+        <module>rating-service</module>
+        <module>service-discovery</module>
+        <module>service-gateway</module>
+    </modules>
 
 </project>
